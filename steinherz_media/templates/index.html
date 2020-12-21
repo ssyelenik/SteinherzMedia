@@ -219,12 +219,22 @@ visibility:hidden;}}
             </a>
           </li>-->
             <li class="nav-item">
-                <button type="button" class="btn btn-danger learn-more" onclick="scrollWin()">Learn More ></button>
+                <button type="button" class="btn btn-danger learn-more" onclick="scrollFunc()">Learn More ></button>
             </li>
          </ul>
 <script>
-function scrollWin() {
+/*function scrollWin() {
   window.scrollBy(0, 900);
+}*/
+function scrollFunc(){
+
+  if(window.pageYOffset<900){ 
+    var elmnt = document.getElementById("greeting");
+    elmnt.scrollIntoView();
+  } else if (window.pageYOffset>900 || window.pageYOffset<1500){
+    var elmnt = document.getElementById("helpyou");
+    elmnt.scrollIntoView();
+  }
 }
 </script>
 
@@ -293,9 +303,9 @@ Delights investors. <br>
     </div>
 </div>
 </div>
-
-<div class="container"><div class="container"><div class="container"><div class="container" id="helpyou">
-<div class="jumbotron text-center help-you" style="background-color:white;height:230px;">
+<div style="height:70px;" id="helpyou"></div>
+<div class="container"><div class="container"><div class="container"><div class="container" >
+<div class="jumbotron text-center help-you" style="background-color:white;height:230px;" >
   <h1 class="display-4" style="font-weight:900;">How can I help you?</h1>
 <hr class="my-4">
   <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need <img style="margin-top:-10px" src="/static/rainbow-icon.png">
