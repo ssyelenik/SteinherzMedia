@@ -160,6 +160,24 @@ visibility:hidden;}}
         .right-label{
         margin-left:50%
         }
+        .copyright{
+        padding-top:20px;
+        float:left;
+        }
+        .website{
+        padding-top:20px;
+        float:right;
+        }
+        @media (max-width: 1200px) {
+        .copyright{
+        float:none;
+
+        }
+        @media (max-width: 1200px) {
+        .website{
+        float:none;
+        ]
+
     </style>
 </head>
 <body onload="zoom()" style="font-family: 'Quicksand', sans-serif;">
@@ -168,7 +186,7 @@ visibility:hidden;}}
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#" target="_blank" style="margin-top:-25px;" ><img style="margin-top:-10px" src="/static/rainbow-icon.png">
+      <a class="navbar-brand" href="#" target="_blank" style="margin-top:-25px;" ><img style="margin-top:-10px;height:40px;" src="/static/rainbow-original.png">
         <strong><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></strong>
       </a>
 
@@ -184,7 +202,7 @@ visibility:hidden;}}
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{{url_for('index')}}">Home
+            <a class="nav-link" type="button" onclick="home()">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -219,22 +237,37 @@ visibility:hidden;}}
             </a>
           </li>-->
             <li class="nav-item">
-                <button type="button" class="btn btn-danger learn-more" onclick="scrollFunc()">Learn More ></button>
+                <button type="button" class="btn btn-danger learn-more" onclick="scrollWin()">Learn More ></button>
             </li>
          </ul>
 <script>
-/*function scrollWin() {
-  window.scrollBy(0, 900);
-}*/
-function scrollFunc(){
-
-  if(window.pageYOffset<900){ 
-    var elmnt = document.getElementById("greeting");
-    elmnt.scrollIntoView();
-  } else if (window.pageYOffset>900 || window.pageYOffset<1500){
-    var elmnt = document.getElementById("helpyou");
-    elmnt.scrollIntoView();
+function scrollWin() {
+  if (window.pageYOffset<936){
+     var elmnt = document.getElementById("greeting");
+     elmnt.scrollIntoView();
+     }
+  else if (window.pageYOffset<1836){
+     var elmnt = document.getElementById("helpyou");
+     elmnt.scrollIntoView();  }
+  else if (window.pageYOffset<3594){
+     var elmnt = document.getElementById("testimonials");
+     elmnt.scrollIntoView();
   }
+    else if(window.pageYOffset<4584){
+     var elmnt = document.getElementById("packages");
+     elmnt.scrollIntoView();
+  }
+    else if(window.pageYOffset<5532){
+     var elmnt = document.getElementById("contact");
+     elmnt.scrollIntoView();
+  }
+    else if(window.pageYOffset<6258){
+
+     window.scrollTo(0,6258);
+    }
+    else if (window.pageYOffset>=6258){
+    window.scrollTo(0,0);
+    }
 }
 </script>
 
@@ -303,12 +336,12 @@ Delights investors. <br>
     </div>
 </div>
 </div>
-<div style="height:70px;" id="helpyou"></div>
-<div class="container"><div class="container"><div class="container"><div class="container" >
-<div class="jumbotron text-center help-you" style="background-color:white;height:230px;" >
+
+<div class="container"><div class="container"><div class="container"><div class="container" id="helpyou">
+<div class="jumbotron text-center help-you" style="background-color:white;height:230px;">
   <h1 class="display-4" style="font-weight:900;">How can I help you?</h1>
 <hr class="my-4">
-  <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need <img style="margin-top:-10px" src="/static/rainbow-icon.png">
+  <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need <img style="margin-top:-10px;height:40px;" src="/static/rainbow-original.png">
        <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span>.</p>
 </div>
 <div class="container" style="display:flex;flex-wrap:wrap;justify-content:center;">
@@ -497,7 +530,7 @@ Delights investors. <br>
     <div class="card-body">
       <h5 class="card-title">Per Hour Model <img style="height:60px;" src="https://img.icons8.com/carbon-copy/100/000000/hourglass.png"></h5>
       <p class="card-text">The classic, simple way to go. Always straightforward, never complicated.</p>
-      <p class="card-text" ><strong><span style="color:#AA00FF;">300</span> NIS / hour</strong></p>
+      <p class="card-text" style="color:#AA00FF;"><strong>Hourly rates mean you pay-as-you-go, and never, ever pay for time more than needed.</strong> </p>
        <p class="card-text"><a type="button" href="#contact" class="btn btn-outline-primary purple-button" style="border-color:#AA00FF;border-radius:20px;">Contact Us</a></p>
 
     </div>
@@ -527,7 +560,7 @@ Delights investors. <br>
 <div class="jumbotron text-center help-you" style="background-color:white;height:230px;" id="contact">
   <h1 class="display-4" style="font-weight:900;">Contact Us</h1>
 <hr class="my-4">
-  <p class="lead">Leave us a message and <img style="margin-top:-10px" src="/static/rainbow-icon.png">
+  <p class="lead">Leave us a message and <img style="margin-top:-10px;height:40px;" src="/static/rainbow-original.png">
        <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span> will be in touch with you shortly to let you know how we can help.</p>
 </div>
 <div style="height:40px;"></div>
@@ -830,18 +863,12 @@ Delights investors. <br>
 <div style="height:50px"></div>
 <footer class="bg-light text-center text-lg-start" style="background-color:#1A237E!important;color:white;">
   <!-- Grid container -->
-  <div class="container p-4">
+  <div class="container p-4" >
     <!--Grid row-->
-    <div class="row">
+    <div class="row" >
       <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
         <h5 class="text-uppercase">Steinherz Media</h5>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-          voluptatem veniam, est atque cumque eum delectus sint!
-        </p>
       </div>
       <!--Grid column-->
 
@@ -851,16 +878,21 @@ Delights investors. <br>
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="{{url_for('index')}}" class="text-light">Home</a>
+            <a type="button" style="text-decoration:underline;" onclick="home()" class="text-light">Home</a>
           </li>
+            <script>
+function home() {
+    window.scrollTo(0,0);
+}
+</script>
           <li>
             <a href="#greeting" class="text-light">Who am I?</a>
           </li>
           <li>
-            <a href="#helpyou!" class="text-light">How can I help you?</a>
+            <a href="#helpyou" class="text-light">How can I help you?</a>
           </li>
           <li>
-            <a href="#testimonials!" class="text-light">Testimonials</a>
+            <a href="#testimonials" class="text-light">Testimonials</a>
           </li>
         </ul>
       </div>
@@ -887,10 +919,9 @@ Delights investors. <br>
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: white;color:black;">
-    © 2020 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/" style="text-decoration:none;"><img style="margin-top:-10px;margin-left:10px;margin-right:4px;" src="/static/rainbow-icon.png">
-        <strong><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></strong></a>
+  <div style="background-color: white;color:black;">
+      <span class="copyright">    © 2020 Copyright: <img style="margin-top:-10px;margin-left:5px;margin-right:-4px;height:40px;" src="/static/rainbow-original.png"><strong><i><sub style="font-size:3rem;">S</sub>teinherz <sub style="font-size:3rem;">M</sub>edia</i></strong></span>
+      <span class="website"><a style="margin-right:20px;" href="https://www.vecteezy.com/"> PNGs by Vecteezy</a><strong>Site designed by Sharon Yelenik</strong></span>
   </div>
   <!-- Copyright -->
 </footer>
