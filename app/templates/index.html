@@ -284,12 +284,6 @@ function scrollWin() {
     </div>
   </nav>
 
-    <div style="background-color:#1A237E;color:white;margin-top:80px;width:50%;" class="container flash" >
-      {% for mesg in get_flashed_messages() %}
-      {{ mesg }}
-      {% endfor %}
-</div>
-
 <div class="container" >
 <div class="container">
 <div class="container">
@@ -567,6 +561,11 @@ Delights investors. <br>
 <div class="jumbotron text-center help-you" style="background-color:white;height:230px;" id="contact">
   <h1 class="display-4" style="font-weight:900;">Contact Us</h1>
 <hr class="my-4">
+        <div style="background-color:#1A237E;color:white;width:50%;" class="container flash" >
+      {% for mesg in get_flashed_messages() %}
+      {{ mesg }}
+      {% endfor %}
+</div>
   <p class="lead">Leave us a message and <img class="logo" src="/static/logo.jpg">
        <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span> will be in touch with you shortly to let you know how we can help.</p>
 </div>
