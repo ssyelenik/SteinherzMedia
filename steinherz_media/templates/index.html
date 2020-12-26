@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="/static/favicon.png" type="image/png">
+<link rel="shortcut icon" href="/static/favicon.jpg" type="image/jpg">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Steinherz Media</title>
@@ -39,13 +39,17 @@
 
         .learn-more{
         border-radius:20px;
-        background-color:#f50057;
+        background-color:#EC407A;
+        border-color:#EC407A;
         }
         .learn-more:hover{
         background-color:#C2185B;
         border:#C2185B;
         }
-
+.logo{
+        margin-top:-5px;
+        height:30px;
+        }
         .greeting{
         background:#1A237E;
         height:550px;
@@ -186,7 +190,7 @@ visibility:hidden;}}
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#" target="_blank" style="margin-top:-25px;" ><img style="margin-top:-10px;height:40px;" src="/static/rainbow-original.png">
+      <a class="navbar-brand" href="#" target="_blank" style="margin-top:-25px;" ><img class="logo" src="/static/logo.jpg">
         <strong><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></strong>
       </a>
 
@@ -207,6 +211,12 @@ visibility:hidden;}}
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#greeting" >About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#helpyou" >Services</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#testimonials" >Testimonials</a>
           </li>
           <li class="nav-item">
@@ -220,14 +230,10 @@ visibility:hidden;}}
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
-              <i class="fab fa-facebook-f">Facebook</i>
-            </a>
-          </li>
+
           <li class="nav-item" style="margin-right:10px;">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link " target="_blank">
-              <i class="fab fa-twitter">Twitter</i>
+            <a href="https://www.linkedin.com/in/batyasteinherz/" class="nav-link " target="_blank">
+              <i class="">Linkedin</i>
             </a>
           </li>
 <!--          <li class="nav-item">
@@ -237,7 +243,8 @@ visibility:hidden;}}
             </a>
           </li>-->
             <li class="nav-item">
-                <button type="button" class="btn btn-danger learn-more" onclick="scrollWin()">Learn More ></button>
+
+                <a type="button" style="color:white;" class="btn btn-danger btn-md learn-more" onclick="scrollWin()" role="button">Learn more ></a>
             </li>
          </ul>
 <script>
@@ -261,11 +268,11 @@ function scrollWin() {
      var elmnt = document.getElementById("contact");
      elmnt.scrollIntoView();
   }
-    else if(window.pageYOffset<6258){
+    else if(window.pageYOffset<6240){
 
-     window.scrollTo(0,6258);
+     window.scrollTo(0,6240);
     }
-    else if (window.pageYOffset>=6258){
+    else{
     window.scrollTo(0,0);
     }
 }
@@ -298,7 +305,7 @@ Delights investors. <br>
 
   <a class="btn btn-primary btn-lg learn-more" href="#greeting" role="button">Learn More ></a>
 </div></div></div></div>
-<div id="greeting" style="height:50px;"></div>
+<div id="greeting" style="height:80px;"></div>
 <div class="greeting" >
     <div class="jumbotron-fluid text-center" style="width:100%;height:400px;background-color:#1A237E;color:white;position:absolute;top:100px;left:0px;">
         <h1 class="display-4">Steinherz Media</h1>
@@ -341,7 +348,7 @@ Delights investors. <br>
 <div class="jumbotron text-center help-you" style="background-color:white;height:230px;">
   <h1 class="display-4" style="font-weight:900;">How can I help you?</h1>
 <hr class="my-4">
-  <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need <img style="margin-top:-10px;height:40px;" src="/static/rainbow-original.png">
+  <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need <img class="logo" src="/static/logo.jpg">
        <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span>.</p>
 </div>
 <div class="container" style="display:flex;flex-wrap:wrap;justify-content:center;">
@@ -530,7 +537,7 @@ Delights investors. <br>
     <div class="card-body">
       <h5 class="card-title">Per Hour Model <img style="height:60px;" src="https://img.icons8.com/carbon-copy/100/000000/hourglass.png"></h5>
       <p class="card-text">The classic, simple way to go. Always straightforward, never complicated.</p>
-      <p class="card-text" style="color:#AA00FF;"><strong>Hourly rates mean you pay-as-you-go, and never, ever pay for time more than needed.</strong> </p>
+      <p class="card-text" style="color:#AA00FF;"><strong>Hourly rates mean you pay-as-you-go, and never, ever, pay for time more than needed.</strong> </p>
        <p class="card-text"><a type="button" href="#contact" class="btn btn-outline-primary purple-button" style="border-color:#AA00FF;border-radius:20px;">Contact Us</a></p>
 
     </div>
@@ -560,7 +567,7 @@ Delights investors. <br>
 <div class="jumbotron text-center help-you" style="background-color:white;height:230px;" id="contact">
   <h1 class="display-4" style="font-weight:900;">Contact Us</h1>
 <hr class="my-4">
-  <p class="lead">Leave us a message and <img style="margin-top:-10px;height:40px;" src="/static/rainbow-original.png">
+  <p class="lead">Leave us a message and <img class="logo" src="/static/logo.jpg">
        <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span> will be in touch with you shortly to let you know how we can help.</p>
 </div>
 <div style="height:40px;"></div>
@@ -856,8 +863,8 @@ Delights investors. <br>
             </form>
 
     </div>
-     <div style="text-align:center; margin-top:30px;">
-         <a class="btn btn-primary btn-lg learn-more" href="{{url_for('index')}}" role="button">Back to top ></a>
+     <div style="text-align:center; margin-top:30px;color:white;">
+         <a class="btn btn-primary btn-lg learn-more" onclick="home()" type="button" role="button">Back to top ></a>
         </div>
 <!-- Footer -->
 <div style="height:50px"></div>
@@ -920,7 +927,7 @@ function home() {
 
   <!-- Copyright -->
   <div style="background-color: white;color:black;">
-      <span class="copyright">    © 2020 Copyright: <img style="margin-top:-10px;margin-left:5px;margin-right:-4px;height:40px;" src="/static/rainbow-original.png"><strong><i><sub style="font-size:3rem;">S</sub>teinherz <sub style="font-size:3rem;">M</sub>edia</i></strong></span>
+      <span class="copyright">    © 2020 Copyright: <img style="margin-left:5px;margin-right:-4px;" class="logo" src="/static/logo.jpg"><strong><i><sub style="font-size:3rem;">S</sub>teinherz <sub style="font-size:3rem;">M</sub>edia</i></strong></span>
       <span class="website"><a style="margin-right:20px;" href="https://www.vecteezy.com/"> PNGs by Vecteezy</a><strong>Site designed by Sharon Yelenik</strong></span>
   </div>
   <!-- Copyright -->
