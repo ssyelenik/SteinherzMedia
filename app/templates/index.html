@@ -22,6 +22,27 @@
         }
     </script>
     <style>
+        @media (max-width: 1200px) {
+        body {
+overflow-x:hidden;
+}}
+        .navbar{
+         background-color: white;
+        }
+         @media (max-width: 1200px) {
+.nav-item{
+background-color:pink;
+        width:100%;
+        }}
+          @media (max-width: 1200px) {
+.nav-item:hover{
+background-color:magenta;
+        width:100%;
+        }}
+        @media (max-width: 1200px) {
+        .nav-link{
+color:white!important;
+        }}
         .bullets{
             background:lightgrey;
             border-radius:10px;
@@ -46,6 +67,11 @@
         background-color:#C2185B;
         border:#C2185B;
         }
+
+        @media (max-width: 1200px) {
+.learn-button{
+visibility:hidden;}}
+
 .logo{
         margin-top:-5px;
         height:30px;
@@ -136,6 +162,13 @@ visibility:hidden;}}
         margin-left:70px;
         }
         }
+        .testimonial-area{
+        background-color:#1A237E;margin-top:100px;height:560px;
+        }
+        @media (max-width: 1200px) {
+        .testimonial-area{
+        height:1030px;
+        }}
         .purple-button:hover{
         background-color:#AA00FF;
         }
@@ -186,7 +219,7 @@ visibility:hidden;}}
 </head>
 <body onload="zoom()" style="font-family: 'Quicksand', sans-serif;">
 <!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar" style="background-color: white;" >
+<nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar" >
     <div class="container">
 
       <!-- Brand -->
@@ -242,7 +275,7 @@ visibility:hidden;}}
               <i class="fab fa-github mr-2"></i>MDB GitHub
             </a>
           </li>-->
-            <li class="nav-item">
+            <li class="learn-button nav-item">
 
                 <a type="button" style="color:white;" class="btn btn-danger btn-md learn-more" onclick="scrollWin()" role="button">Learn more ></a>
             </li>
@@ -275,7 +308,7 @@ function scrollWin() {
     else{
     window.scrollTo(0,0);
     }
-    
+
 }
 </script>
 
@@ -469,7 +502,7 @@ Delights investors. <br>
 </div></div></div></div></div>
 <div style="height:100px;"></div>
 <div id="testimonials"></div>
-<div style="background-color:#1A237E;margin-top:100px;height:560px;" >
+<div class="testimonial-area" >
 <div class="jumbotron text-center" style="background-color:#1A237E;height:130px;color:white;" >
   <h1 class="display-4" style="font-weight:900;margin-top:-50px;">Want to see what my clients think?
 </h1>
