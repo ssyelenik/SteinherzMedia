@@ -100,8 +100,12 @@ visibility:hidden;}}
  @media (max-width: 1200px) {
         .help-you{
         height:350px!important;
+        padding-top:80px;
         }}
-
+  @media (max-width: 1200px) {
+        #contact{
+        padding-top:80px!important;
+        }}
         /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -168,6 +172,7 @@ visibility:hidden;}}
          @media (max-width: 1200px) {
         .testimonials{
         margin:auto;
+        padding-top:50px;
         }
         }
         .testimonial-area{
@@ -176,6 +181,7 @@ visibility:hidden;}}
         @media (max-width: 1200px) {
         .testimonial-area{
         height:1030px;
+        padding-top:50px;
         }}
         .purple-button:hover{
         background-color:#AA00FF;
@@ -186,6 +192,9 @@ visibility:hidden;}}
         margin-bottom:30px;
         }
         }
+        @media (max-width: 1200px) {
+        .packages-title{
+        padding-top:50px;}}
 .contact {
         width:55%;
         border:solid 1px lightgrey;
@@ -225,11 +234,11 @@ visibility:hidden;}}
 
     </style>
 </head>
-    <script type="text/javascript">
+<!--    <script type="text/javascript">
         function zoom() {
             document.body.style.zoom = "90%"
         }
-    </script>
+    </script>-->
 <body onload="" style="zoom:1;font-family: 'Quicksand', sans-serif;">
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar" >
@@ -387,7 +396,7 @@ Delights investors. <br>
 
 <div class="container"><div class="container"><div class="container"><div class="container" id="helpyou">
 <div class="jumbotron text-center help-you" style="background-color:white;height:230px;">
-  <h1 class="display-4" style="font-weight:900;">How can I help you?</h1>
+  <h1 class="display-4 helpyou" style="font-weight:900;">How can I help you?</h1>
 <hr class="my-4">
   <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need<br>
        <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub> S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span>.</p>
@@ -516,17 +525,17 @@ Delights investors. <br>
 <div style="height:100px;"></div>
 <div id="testimonials"></div>
 <div class="testimonial-area" >
-<div class="jumbotron text-center" style="background-color:#1A237E;height:130px;color:white;" >
-  <h1 class="display-4" style="font-weight:900;margin-top:-50px;">Want to see what my clients think?
+<div class="jumbotron text-center" style="background-color:#1A237E;color:white;" >
+  <h1  style="font-weight:900;margin-top:-50px;">Want to see what my clients think?
 </h1>
-    <hr style="color;white;">
+    <hr style="color:white;">
     </div>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top:-30px;">
   <div class="carousel-inner">
     <div class="carousel-item active" style="margin-top:-50px;">
       <div class="d-block w-100">
-          <div class="jumbotron testimonials"><h2><i>"I’ve worked with Batya for over four years and if you need high-quality cybersecurity marketing writing for blogs, web copy, articles, or white papers, she is your answer. Batya has a flair for crafting content in each company’s own authentic voice, with work that is highly customized and engaging. She is creative, positive and energetic and becomes an integral part of each team she works with."</i>
-              </h2>
+          <div class="jumbotron testimonials"><h4><i>"I’ve worked with Batya for over four years and if you need high-quality cybersecurity marketing writing for blogs, web copy, articles, or white papers, she is your answer. Batya has a flair for crafting content in each company’s own authentic voice, with work that is highly customized and engaging. She is creative, positive and energetic and becomes an integral part of each team she works with."</i>
+              </h4>
           </div>
       </div>
                 <div style="text-align:center;margin-top:0px;">
@@ -535,9 +544,9 @@ Delights investors. <br>
     </div>
     <div class="carousel-item" style="margin-top:-50px;">
       <div class="d-block w-100">
-          <div class="jumbotron testimonials"><h2><i>"Finding a tech/cyber security blogger who possesses both specialized knowledge and excellent writing skills is like finding a needle in a haystack. In my experience as a marketing content manager, Batya is the sharpest needle I've found. Moreover, she is energetic, responsive, and an engaging storyteller. I hope to continue working with her for many years to come! </i>
-              </h2><br>
-              <h2 style="text-align:right;"><strong><i>- Ronit Goldstand, Ericom</i></strong></h2>
+          <div class="jumbotron testimonials"><h4><i>"Finding a tech/cyber security blogger who possesses both specialized knowledge and excellent writing skills is like finding a needle in a haystack. In my experience as a marketing content manager, Batya is the sharpest needle I've found. Moreover, she is energetic, responsive, and an engaging storyteller. I hope to continue working with her for many years to come! </i>
+              </h4><br>
+              <h4 style="text-align:right;"><strong><i>- Ronit Goldstand, Ericom</i></strong></h4>
           </div>
       </div>
                 <div style="text-align:center;margin-top:-30px;">
@@ -546,9 +555,9 @@ Delights investors. <br>
     </div>
     <div class="carousel-item" style="margin-top:-50px;">
        <div class="d-block w-100">
-          <div class="jumbotron testimonials"><h2><i>"Working with Batya continues to be a great experience - not only is she a talented content writer, but also a Mensch! She is very dedicated, tirelessly works on every bit of the content until it meets the highest standards, and always does it with a big smile."</i>
-              </h2><br>
-             <h2 style="text-align:right;"><strong><i> - Tamar Asseraf, COO, Atreo Branding</i></strong></h2>
+          <div class="jumbotron testimonials"><h4><i>"Working with Batya continues to be a great experience - not only is she a talented content writer, but also a Mensch! She is very dedicated, tirelessly works on every bit of the content until it meets the highest standards, and always does it with a big smile."</i>
+              </h4><br>
+             <h4 style="text-align:right;"><strong><i> - Tamar Asseraf, COO, Atreo Branding</i></strong></h4>
           </div>
       </div>
         <div style="text-align:center;">
@@ -572,7 +581,7 @@ Delights investors. <br>
 
 
 <div class="jumbotron text-center" style="height:130px;background-color:white;" id="packages" >
-  <h1 class="display-4" style="font-weight:900;background-color:white;">Packages</h1>
+  <h1 class="display-4 packages-title" style="font-weight:900;background-color:white;">Packages</h1>
     </div>
 <div style="display:flex;flex-wrap:wrap;justify-content:center;">
   <div class="card pckg" style="border-top:solid 20px #AA00FF;margin-left:30px;margin-right:30px;width:25%;">
