@@ -18,7 +18,7 @@
 
     <script type="text/javascript">
         function zoom() {
-            document.body.style.zoom = "150%"
+            document.body.style.zoom = "67%"
         }
     </script>
     <style>
@@ -81,7 +81,19 @@ visibility:hidden;}}
         height:550px;
         position:relative;
         }
+.greeting
+        {
+        background-size:contain;
+        background-image:url('/static/greeting_bcknd.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        }
 
+        @media (max-width: 1200px) {
+        .greeting{
+        background:#1A237E;
+        }
+        }
         @media (max-width: 1200px) {
   .greeting{height:700px!important;}
 }
@@ -217,7 +229,7 @@ visibility:hidden;}}
 
     </style>
 </head>
-<body onload="zoom()" style="font-family: 'Quicksand', sans-serif;">
+<body onload="zoom" style="font-family: 'Quicksand', sans-serif;">
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar" >
     <div class="container">
@@ -322,12 +334,12 @@ function scrollWin() {
 <div class="container">
 <div class="container">
 <div class="jumbotron text-center" style="background-color:white;" >
-  <h1 class="display-4" style="margin-top:70px;">Awesome Tech Content:</h1>
+  <h1 class="display-4" style="margin-top:70px;">Awesome Tech Content</h1>
 <h2 style="font-weight:900;">Makes your brand a thought leader. <br>
 Keeps people talking. <br>
 Delights investors. <br>
 </h2>
-  <p class="lead">But as a super-busy tech CMO/founder/insert your role here,<br>you can't worry about that still-unwritten PR article…<br>or that blog you never published… or that case study your prospect wants ASAP.</p>
+  <p class="lead">But as a super-busy tech CMO/founder/insert-your-role-here,<br>you can't worry about that still-unwritten PR article…<br>or that blog you never published… or that case study your prospect wants ASAP.</p>
   <hr class="my-4">
 
 
@@ -335,18 +347,18 @@ Delights investors. <br>
 </div></div></div></div>
 <div id="greeting" style="height:80px;"></div>
 <div class="greeting" >
-    <div class="jumbotron-fluid text-center" style="width:100%;height:400px;background-color:#1A237E;color:white;position:absolute;top:100px;left:0px;">
+    <div class="jumbotron-fluid text-center" style="width:100%;height:400px;background:none;color:white;position:absolute;top:100px;left:0px;">
         <h1 class="display-4">Steinherz Media</h1>
         <p class="lead">Strategic tech content for high-performing startups and enterprises.</p>
         <hr class="my-4">
-
-        <h4 style="margin: auto;width:75%;padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:40px;">Hi, I’m Batya Steinherz, tech marketing content expert with nearly a decade of experience working with b2b and b2g startups and enterprises. I help businesses like yours create the messages your audiences need to hear. I've done it for over 35 tech brands and I can help you too. </h4>
-        <p class="lead">
+<div style="padding-left:20px;padding-right:20px;padding-top:20px;">
+        <h4 style="margin: auto;background-color:#1A237E;width:75%;">Hi, I’m Batya Steinherz, tech marketing content expert with nearly a decade of experience working with b2b and b2g startups and enterprises. I help businesses like yours create the messages your audiences need to hear. I've done it for over 35 tech brands and I can help you too. </h4>
+        <p class="lead" style="margin-top:40px;">
             <a class="btn btn-primary btn-lg learn-more" href="#helpyou" role="button">Learn more ></a>
         </p>
-
+</div>
     </div>
-    <div class="greeting-pics">
+ <!--   <div class="greeting-pics">
     <div style="position:absolute;left:43px; top:30px;">
         <img src="\static\workplace-4155023_1920.jpg" style="box-shadow: 10px 10px 5px black; -ms-transform: rotate(-20deg);transform: rotate(-20deg); /* IE 9 */height:100px;border-radius:100%">
     </div>
@@ -369,17 +381,17 @@ Delights investors. <br>
     <div style="position:absolute;left:-115px; top:160px;">
         <img src="/static/cable3.png" style="height:250px;-ms-transform: rotate(13deg);transform: rotate(13deg); ">
     </div>
-</div>
+</div>-->
 </div>
 
 <div class="container"><div class="container"><div class="container"><div class="container" id="helpyou">
 <div class="jumbotron text-center help-you" style="background-color:white;height:230px;">
   <h1 class="display-4" style="font-weight:900;">How can I help you?</h1>
 <hr class="my-4">
-  <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need <img class="logo" src="/static/logo.jpg">
-       <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub>S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span>.</p>
+  <p class="lead">If any of these challenges keep you up at night (or just stuck at the office ‘til midnight), you need<br>
+       <span style="font-weight:900;"><i><span style="font-size:3rem;margin-left:-10px;"><sub> S</sub></span>teinherz <span style="font-size:3rem;"><sub>M</sub></span>edia</i></span>.</p>
 </div>
-<div class="container" style="display:flex;flex-wrap:wrap;justify-content:center;">
+<div class="container" style="display:flex;flex-wrap:wrap;justify-content:center;padding-top:20px;">
 
     <div class="flip-card bullets">
   <div class="flip-card-inner">
@@ -450,7 +462,7 @@ Delights investors. <br>
   <div class="flip-card-inner">
     <div class="flip-card-front" >
         <div class="container">
-      <img style="margin-top:60px;" src="https://img.icons8.com/color/48/000000/new-contact.png"><p style="font-size:1.5rem;"><strong>Contact Strategy</strong></p>
+      <img style="margin-top:60px;" src="https://img.icons8.com/color/48/000000/new-contact.png"><p style="font-size:1.5rem;"><strong>Content Strategy</strong></p>
             </div>
     </div>
     <div class="flip-card-back" >
